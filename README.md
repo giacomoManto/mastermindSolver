@@ -13,6 +13,27 @@ Of the available moves, simply selected a random one.
 ## Most Occurences
 
 For this attempt the alogirithm found the most occuring color within the possible moves for each of the four positions and if it was a possible move, guessed those colors for their respective spaces. The code for makeGuess in solver was as follows:
+```Python
+first = {}
+second = {}
+third = {}
+fourth = {}
+
+for move in self.moves:
+    first[move[0]] = first.get(move[0], 0)
+    second[move[1]] = second.get(move[1], 0)
+    third[move[2]] = third.get(move[2], 0)
+    fourth[move[3]] = fourth.get(move[3], 0)
+
+one = max(first, key=first.get)
+two = max(second, key=second.get)
+three = max(third, key=third.get)
+four = max(fourth, key=fourth.get)
+potGuess = [one, two, three, four]
+
+if potGuess in self.moves:
+    return potGuess
+```
 
 ## MiniMax-Shortened
 

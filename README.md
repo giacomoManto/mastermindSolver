@@ -12,7 +12,7 @@ Of the available moves, simply selected a random one.
 
 ## Most Occurences
 
-For this attempt the alogirithm found the most occuring color within the possible moves for each of the four positions and if it was a possible move, guessed those colors for their respective spaces. The code for makeGuess in solver was as follows:
+For this attempt the alogirithm found the most occuring color within the possible moves for each of the four positions and if it was a possible move, guessed those colors for their respective spaces. The code for makeGuess in solver is as follows:
 ```Python
 first = {}
 second = {}
